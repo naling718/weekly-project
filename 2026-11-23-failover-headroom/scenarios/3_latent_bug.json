@@ -1,0 +1,7 @@
+{
+  "note": "14% out of service AND a latent lock-contention bug: servers hang at 85% of rated capacity.",
+  "pool": {"name": "mail-gateways", "servers": 100, "out_of_service": 14, "capacity_rps": 1000,
+           "capacity_spread": 0.2, "lock_limit": 0.85, "load_rps": 55000},
+  "failover": {"from": "chat-gateways", "load_rps": 10000},
+  "headroom_target": 0.8
+}

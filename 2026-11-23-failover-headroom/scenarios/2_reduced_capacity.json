@@ -1,0 +1,7 @@
+{
+  "note": "Same failover, but 14% of gateways are already out of service.",
+  "pool": {"name": "mail-gateways", "servers": 100, "out_of_service": 14, "capacity_rps": 1000,
+           "capacity_spread": 0.2, "lock_limit": 1.0, "load_rps": 55000},
+  "failover": {"from": "chat-gateways", "load_rps": 10000},
+  "headroom_target": 0.8
+}
